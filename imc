@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" contet="descrição do contúdo do site">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Fernanda">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>HTML Básico</title>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+
+
+
+        </header>
+        
+        
+        <main>
+
+            <section class="imc-area">
+
+                <div class="imc-info">
+                    <img style="width: 120px;" src="./imagens/Acade-removebg-preview.png" alt="">
+                    <h2>Calculo de IMC</h2>
+                    <span>*Utilize "." (ponto) para separar os decimais</span>
+                    <input oninput="alteraValPeso(this)" class="camp-imc" placeholder="Digite seu peso em kg" id="peso" type="number">
+                    <input  oninput="alteraValAltura(this)" class="camp-imc" placeholder="Digite sua altura em centímetos" id="altura" type="number">
+                    <button onclick="resultado()" class="calc-botao">Calcular</button>
+                </div>
+
+                <div class="result-area">
+                    <div class="infos">
+                        <div style="margin-right: 10px;" class="campo-peso">
+                           <p id="result_peso"></p>
+                           <span> kg.</span>
+                        </div>
+                        <div style="margin-left: 10px;"  class="campo-altura">
+                            <p id="result_altura"></p>
+                            <span> m.</span>
+                        </div>
+                    </div>
+                    <div class="result">
+                        <span id='resultado'>Resultado:</span>
+                    </div>
+                </div>
+
+            </section>
+
+
+        </main>
+
+        <footer>
+
+        </footer>
+
+    </div>
+    
+</body>
+
+<script src="./javascript/script.js"></script>
+
+</html>
